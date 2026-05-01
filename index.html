@@ -950,8 +950,8 @@ function renderMyOrders() {
 //  ADMIN
 // ============================================================
 function adminLogin() {
-  const u = document.getElementById('admin-user').value.trim();
-  const p = document.getElementById('admin-pass').value.trim();
+  const u = document.getElementById('admin').value.trim();
+  const p = document.getElementById('admin1234').value.trim();
   const cfg = DB.get('admin');
   if(u === cfg.user && p === cfg.pass) {
     adminLoggedIn = true;
